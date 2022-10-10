@@ -18,6 +18,10 @@ toml = "^0.10.2"
 [tool.yapf]
 based_on_style = "google"
 
+[tool.poetry.group.ipynb.dependencies]
+jupyter = "^1.0.0"
+notebook = "^6.4.12"
+
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
