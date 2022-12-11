@@ -1,0 +1,32 @@
+[tool.poetry]
+name = "hw3"
+version = "0.1.0"
+description = ""
+authors = ["David Chiu <david20571015@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+numpy = "^1.23.5"
+pandas = "^1.5.2"
+scikit-learn = "^1.2.0"
+matplotlib = "^3.6.2"
+scipy = "^1.9.3"
+pillow = "^9.3.0"
+
+[tool.poetry.group.dev.dependencies]
+yapf = "^0.32.0"
+pylint = "^2.15.8"
+toml = "^0.10.2"
+
+[tool.yapf]
+based_on_style = "google"
+column_limit = 100
+
+[tool.poetry.group.ipynb.dependencies]
+jupyter = "^1.0.0"
+notebook = "^6.5.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
